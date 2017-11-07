@@ -1,0 +1,272 @@
+body {
+	font-family: Calibri;
+	color: #A7A7A7;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+#container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#container-works {
+	width: 800px;
+	margin: 0 auto;
+	min-height: 980px;
+	background: url(img/fundo.png) no-repeat;
+}
+
+#header {
+	border-bottom: solid 1px #A7A7A7;
+	position: relative;
+	height: 70px;
+}
+
+#header-works {
+	position: relative;
+	height: 410px;
+}
+
+#logo-title {
+	float: left;
+	width: 512px;
+	height: 70px;
+}
+
+#logo-title-works {
+	float: left;
+	width: 400px;
+	height: 70px;
+	padding-top: 170px;
+}
+
+#logo-title a {
+	color: #FFF110;
+	font-size: 52px;
+	margin-right: 22px;
+	text-align: right;
+	display: inherit;
+}
+
+#logo-title-works a {
+	color: #5A5A5A;
+	font-size: 24px;
+	margin-right: 22px;
+	text-align: right;
+	display: inherit;
+}
+
+#image-set-title {
+	height: 200px;
+	background: url(img/image-set-title.png) top center no-repeat;
+}
+
+#image-set-title a {
+	color: #5A5A5A;
+	font-size: 20px;
+	text-align: center;
+	display: inherit;
+	padding-top: 140px;
+}
+
+#logo-social-networking {
+	padding-top: 150px;
+	margin-left: 400px;
+}
+
+#logo-social-networking ul {
+	list-style: none;
+}
+
+#logo-social-networking ul li {
+	float: left;
+}
+
+#logo-social-networking ul li a {
+	display: block;
+	float: left;
+	width: 36px;
+	height: 36px;
+	text-indent: -9999px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	margin: 2px;
+}
+
+#logo-social-networking ul li.facebook a {
+	background-image: url(img/facebook.png);
+}
+
+#logo-social-networking ul li.gmail a {
+	background-image: url(img/gmail.png);
+}
+
+#logo-social-networking ul li.linkedin a {
+	background-image: url(img/linkedin.png);
+}
+
+#menu {
+	width: 512px;
+	margin-left: 512px;
+	height: 70px;
+	padding-left: 140px;
+}
+
+#menu ul {
+	float: left;
+	margin: 0;
+}
+
+#menu ul li {
+	margin: 10px 0;
+}
+
+#menu ul  li a {
+	color: #A7A7A7;
+}
+
+#menu ul  li a.active {
+	color: #000000;
+}
+
+#page-works {
+	clear: both;
+	position: relative;
+}
+
+#page {
+	clear: both;
+}
+
+#content {
+	margin: 0 auto;
+}
+
+#page.contact ul li {
+	clear: both;
+}
+
+#page.contact ul li img {
+	float: left;
+}
+
+#page.contact ul li span {
+	margin: 10px;
+	height: 64px;
+	line-height: 64px;
+	color: #000000;
+}
+
+#navigation-page {
+	margin-bottom: 16px;
+}
+
+#navigation-page a {
+	color: #A7A7A7;
+}
+
+#navigation-page a.active {
+	color: #000000;
+}
+
+#image-set {
+	margin: 0 auto;
+}
+
+#image-set-works {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#image-set ul,#image-set-works ul {
+	margin: 0;
+	padding: 0;
+}
+
+.works-image-link {
+	display: inline-block;
+	margin: 5px;
+	line-height: 0;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	-ms-border-radius: 1px;
+	-o-border-radius: 1px;
+	border-radius: 4px;
+	border: 2px solid #A7A7A7;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+
+.presentation .works-image-link {
+	margin: 5px;
+}
+
+.presentation ul li {
+	display: inline-block;
+}
+
+.presentation ul li  h3 {
+	margin: 10px;
+	text-align: center;
+}
+
+.works-image-link:hover {
+	border: 2px solid #FFF110;
+}
+
+.works-image-link.disabled:hover {
+	filter:
+		url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	/* Firefox 10+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	-webkit-transition: all .6s ease;
+	/* Fade to color for Chrome and Safari */
+	-webkit-backface-visibility: hidden;
+	/* Fix for transition flickering */
+}
+
+.works-image {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#description {
+	width: 512px;
+	float: left;
+}
+
+#description h3 {
+	color: #000000;
+}
+
+.profile-image-link {
+	display: inline-block;
+	margin: 0 10px 20px 10px;
+	line-height: 0;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	-ms-border-radius: 1px;
+	-o-border-radius: 1px;
+	border-radius: 4px;
+	border: 2px solid #FFF110;
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+	pointer-events: none;
+	cursor: default;
+}
