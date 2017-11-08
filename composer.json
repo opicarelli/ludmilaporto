@@ -5,7 +5,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "laravel/framework": "4.2.*",
+        "laravel/framework": "5.2.*",
         "zizaco/confide": "~3.2",
         "zizaco/entrust": "~1.2",
         "bllim/datatables": "~1.3",
