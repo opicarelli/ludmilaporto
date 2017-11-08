@@ -1,10 +1,11 @@
 {
-    "name": "opicarelli/ludmilaporto",
+    "name": "ludmila/ludmila",
     "description": "ludmilaporto.com",
     "keywords": ["portfolio", "ludmilaporto"],
     "license": "MIT",
     "type": "project",
     "require": {
+        "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "zizaco/confide": "~3.2",
         "zizaco/entrust": "~1.2",
