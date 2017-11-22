@@ -54,11 +54,11 @@ return array(
 
         'mysql' => array(
             'driver'    => 'mysql',
-            'host'      => getenv('OPENSHIFT_MYSQL_DB_HOST'),
-            'port'      => getenv('OPENSHIFT_MYSQL_DB_PORT'),
-            'database'  => getenv('OPENSHIFT_APP_NAME'),
-            'username'  => getenv('OPENSHIFT_MYSQL_DB_USERNAME'),
-            'password'  => getenv('OPENSHIFT_MYSQL_DB_PASSWORD'),
+            'host'      => getenv('DATABASE_HOST'),
+            'port'      => getenv('DATABASE_PORT'),
+            'database'  => getenv('DATABASE_NAME'),
+            'username'  => getenv('DATABASE_USERNAME'),
+            'password'  => getenv('DATABASE_PASSWORD'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
@@ -66,10 +66,11 @@ return array(
 
         'pgsql' => array(
             'driver'   => 'pgsql',
-            'host'     => 'localhost',
-            'database' => 'forge',
-            'username' => 'forge',
-            'password' => '',
+            'host'     => getenv('DATABASE_HOST'),
+            'port'     => getenv('DATABASE_PORT'),
+            'database' => getenv('DATABASE_NAME'),
+            'username' => getenv('DATABASE_USERNAME'),
+            'password' => getenv('DATABASE_PASSWORD'),
             'charset'  => 'utf8',
             'prefix'   => '',
             'schema'   => 'public',
