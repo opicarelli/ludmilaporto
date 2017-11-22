@@ -30,7 +30,8 @@ ClassLoader::addDirectories(array(
 | build a basic log file setup which creates a single file for logs.
 |
 */
-
+$monolog = Log::getMonolog();
+$monolog->pushHandler(new Monolog\Handler\ErrorLogHandler());
 Log::useFiles(storage_path().'/logs/laravel.log');
 
 /*
