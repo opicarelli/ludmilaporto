@@ -1,11 +1,5 @@
 <?php
 
-$url = parse_url(getenv("DATABASE_URL"));
-$host = $url["host"];
-$database = substr($url["path"], 1);
-$username = $url["user"];
-$password = $url["pass"];
-
 return array(
 
     /*
@@ -60,10 +54,10 @@ return array(
 
         'mysql' => array(
             'driver'    => 'mysql',
-            'host'      => $host,
-            'database'  => $database,
-            'username'  => $username,
-            'password'  => $password,
+            'host'      => parse_url(getenv("DATABASE_URL"))["host"],
+            'database'  => substr(parse_url(getenv("DATABASE_URL"))["path"], 1),
+            'username'  => parse_url(getenv("DATABASE_URL"))["user"],
+            'password'  => parse_url(getenv("DATABASE_URL"))["pass"],
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
@@ -71,10 +65,10 @@ return array(
 
         'pgsql' => array(
             'driver'   => 'pgsql',
-            'host'     => $host,
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
+            'host'     => parse_url(getenv("DATABASE_URL"))["host"],
+            'database' => substr(parse_url(getenv("DATABASE_URL"))["path"], 1),
+            'username' => parse_url(getenv("DATABASE_URL"))["user"],
+            'password' => parse_url(getenv("DATABASE_URL"))["pass"],
             'charset'  => 'utf8',
             'prefix'   => '',
             'schema'   => 'public',

@@ -127,6 +127,7 @@ return array(
 		'Zizaco\Entrust\EntrustServiceProvider', // Entrust Provider for roles
 		'Bllim\Datatables\DatatablesServiceProvider', // Datatables
 		'Intervention\Image\ImageServiceProvider', // Image
+	    'Aws\Laravel\AwsServiceProvider', // AWS S3
 	),
 
 	/*
@@ -201,6 +202,7 @@ return array(
 		'Carbon'          => 'Carbon\Carbon', // Carbon
 		'Datatables'      => 'Bllim\Datatables\Datatables', // DataTables
 		'Image'           => 'Intervention\Image\Facades\Image', // Image
+	    'AWS'             => 'Aws\Laravel\AwsFacade', // AWS S3
 	),
 
 	'available_language' => array('en', 'pt'),
