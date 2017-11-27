@@ -1,0 +1,19 @@
+# Laravel
+/bootstrap/compiled.php
+/vendor
+
+# Composer
+composer.phar
+#composer.lock
+
+# ENV
+.env.local.php
+
+# PHPStorm
+.DS_Store
+.idea
+
+# Eclipse
+.project
+.buildpath
+.settings
