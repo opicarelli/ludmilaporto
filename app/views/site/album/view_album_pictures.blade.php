@@ -12,8 +12,8 @@
     </div>
     <div id="image-set">
         @foreach ($pictures as $p)
-            <a class="works-image-link" href="{{ URL::to('uploads/images/album/picture/' . $p->image_src) }}" data-lightbox="drawings-set" title="{{ $p->description }}">
-                <img class="works-image" src="{{ URL::to('uploads/images/album/picture/' . $p->thumb_src) }}" width="150" height="150" />
+            <a class="works-image-link" href="{{ 'https://s3-sa-east-1.amazonaws.com/ludmilaporto/uploads/images/album/picture/' . $p->image_src }}" data-lightbox="drawings-set" title="{{ $p->description }}">
+                <img class="works-image" src="{{ 'https://s3-sa-east-1.amazonaws.com/ludmilaporto/uploads/images/album/picture/' . $p->thumb_src }}" width="150" height="150" />
             </a>
         @endforeach
     </div>
