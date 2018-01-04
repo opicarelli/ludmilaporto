@@ -32,7 +32,7 @@
                     @foreach($albums as $a)
                         <li>
                             <a class="works-image-link" href="@if($a->type == "LINK"){{ $a->link }}@else{{ URL::to($a->slug) }}@endif">
-                                <img class="works-image" src="{{ 'https://s3-sa-east-1.amazonaws.com/ludmilaporto/uploads/images/album/' . $a->image_src) }}" width="150" height="150"/>
+                                <img class="works-image" src="{{ 'https://s3-sa-east-1.amazonaws.com/ludmilaporto/uploads/images/album/' . $a->image_src }}" width="150" height="150"/>
                             </a>
                         </li>
                     @endforeach
